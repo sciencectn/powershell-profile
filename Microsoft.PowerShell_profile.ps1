@@ -1,3 +1,4 @@
+oh-my-posh init pwsh | Invoke-Expression
 Import-Module ZLocation
 New-Alias -Name "j" Invoke-ZLocation
 New-Alias -Name "subl" -Value "C:\Program Files\Sublime Text\subl.exe"
