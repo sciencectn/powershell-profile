@@ -1,13 +1,19 @@
 # powershell-profile
 A place to store my Powershell profile so I don't have to reinvent the wheel every time I get a fresh copy of Windows
 
+## Install
+
+Get [Windows Terminal](https://apps.microsoft.com/detail/9n0dx20hk701?amp%3Bgl=US&hl=en-us&gl=US).
+
 [Update Powershell to at least 7.0](https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.4#install-powershell-using-winget-recommended)
 ```
 winget install Microsoft.Powershell
 ```
 
-Make sure [Windows Terminal](https://apps.microsoft.com/detail/9n0dx20hk701?rtc=1&hl=en-us&gl=US) runs `pwsh.exe` in its profile (which is `PATH`'d to 7.0) instead of the default `%windir%\System32\WindowsPowerShell\v1.0\powershell.exe` which runs 5.0
-  * Run `$PSVersionTable` to check the version
+Make sure [Windows Terminal](https://apps.microsoft.com/detail/9n0dx20hk701?rtc=1&hl=en-us&gl=US) runs `pwsh.exe` in its profile, which is `PATH`'d to 7.0.
+The default of `%windir%\System32\WindowsPowerShell\v1.0\powershell.exe` runs 5.0
+
+Run `$PSVersionTable` to check the version
 
 Clone this repo into the Powershell directory: 
 ```powershell

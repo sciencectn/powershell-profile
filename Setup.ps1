@@ -1,3 +1,7 @@
+if ($PSVersionTable.PSVersion.Major -lt 7) {
+    Write-Error "Your powershell version of $($PSVersionTable.PSVersion) is too old. Upgrade to at least 7.0"
+    exit 1
+}
 winget install JanDeDobbeleer.OhMyPosh -s winget
 oh-my-posh font install Hack --user
 Install-Module ZLocation -Scope CurrentUser
