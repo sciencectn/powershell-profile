@@ -1,4 +1,4 @@
-oh-my-posh init pwsh | Invoke-Expression
+oh-my-posh init pwsh --config "$PSScriptRoot\powerlevel10k_lean.mine.json" | Invoke-Expression
 Import-Module ZLocation
 New-Alias -Name "j" Invoke-ZLocation
 New-Alias -Name "subl" -Value "C:\Program Files\Sublime Text\subl.exe"

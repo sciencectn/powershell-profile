@@ -2,20 +2,6 @@
     "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
     "blocks": [
         {
-            "segments": [
-                {
-                    "foreground": "#00C5C7",
-                    "properties": {
-                        "time_format": "15:04:05"
-                    },
-                    "style": "plain",
-                    "template": " {{ .CurrentDate | date .Format }} ",
-                    "type": "time"
-                }
-            ],
-            "type": "rprompt"
-        },
-        {
             "alignment": "left",
             "segments": [
                 {
