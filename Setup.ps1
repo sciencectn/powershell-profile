@@ -3,7 +3,7 @@ if ($PSVersionTable.PSVersion.Major -lt 7) {
     exit 1
 }
 winget install JanDeDobbeleer.OhMyPosh -s winget
-oh-my-posh font install Hack --user
+oh-my-posh font install Hack
 Install-Module ZLocation -Scope CurrentUser
 Install-Module git-aliases -Scope CurrentUser -AllowClobber
 Install-Module pscx -AllowClobber -Scope CurrentUser
