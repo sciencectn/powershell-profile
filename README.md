@@ -9,6 +9,11 @@ winget install Microsoft.Powershell
 Make sure [Windows Terminal](https://apps.microsoft.com/detail/9n0dx20hk701?rtc=1&hl=en-us&gl=US) runs `pwsh.exe` in its profile (which is `PATH`'d to 7.0) instead of the default `%windir%\System32\WindowsPowerShell\v1.0\powershell.exe` which runs 5.0
   * Run `$PSVersionTable` to check the version
 
+Clone this repo into the Powershell directory: 
+```powershell
+git clone "https://github.com/sciencectn/powershell-profile.git" "$($profile.CurrentUserCurrentHost)\..\"
+```
+
 Then run `Setup.ps1` which will install the following:
 
 * [oh-my-posh](https://ohmyposh.dev/docs/installation/windows) and [Hack Nerd Font](https://www.nerdfonts.com/font-downloads). 
