@@ -15,10 +15,10 @@ The default of `%windir%\System32\WindowsPowerShell\v1.0\powershell.exe` runs 5.
 
 Run `$PSVersionTable` to check the version
 
-Clone this repo into the Powershell directory: 
-```powershell
-git clone "https://github.com/sciencectn/powershell-profile.git" "$($profile.CurrentUserCurrentHost)\..\"
-```
+Clone this repo into the folder containing the profile `$profile.CurrentUserCurrentHost`. 
+Probably `~\Documents\PowerShell`. 
+ See [about_Profiles](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_profiles?view=powershell-7.4#profile-types-and-locations). 
+
 
 Then run `Setup.ps1` which will install the following:
 
