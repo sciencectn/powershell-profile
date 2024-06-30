@@ -1,3 +1,5 @@
+$ErrorActionPreference = 'Stop'
+
 if ($PSVersionTable.PSVersion.Major -lt 7) {
     Write-Error "Your powershell version of $($PSVersionTable.PSVersion) is too old. Upgrade to at least 7.0"
     exit 1
