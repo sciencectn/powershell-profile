@@ -29,4 +29,8 @@ Then run `Setup.ps1` which will install the following:
 
 [Then configure Windows Terminal to use Hack Nerd Font.](https://ohmyposh.dev/docs/installation/fonts#configuration)
 
+You might have to refresh the terminal if `Setup.ps1` fails to call the `oh-my-posh` command, since it may not be in the PATH yet. 
+I could automate this but I'm too lazy. 
+Also, how often am I going to get a new Windows OS? 
+
 The theme is derived from [powerlevel10k_lean](https://ohmyposh.dev/docs/themes#powerlevel10k_lean). 
