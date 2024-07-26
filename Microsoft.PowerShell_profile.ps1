@@ -6,3 +6,4 @@ Set-PSReadLineOption -PredictionViewStyle ListView
 Set-PSReadlineKeyHandler -Chord Tab -Function MenuComplete
 Import-Module git-aliases -DisableNameChecking
 Import-Module Pscx
+Import-Module posh-git
