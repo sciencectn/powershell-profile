@@ -26,6 +26,7 @@ Then run `Setup.ps1` which will install the following:
 * [Zlocation](https://github.com/vors/ZLocation). It's like autojump. 
 * [Powershell Git Aliases](https://github.com/gluons/powershell-git-aliases). This imitates the legendary Z shell plugin. ggl = git pull, ggp = push, etc
 * [PSCX](https://github.com/Pscx/Pscx). PSCX replaces the pager with `less` which is way better than `more` (you think I wouldn't want to scroll backward?)
+* [Posh-Git](https://github.com/dahlbyk/posh-git?tab=readme-ov-file#installation) which adds tab completion for `git checkout` and more. 
 
 [Then configure Windows Terminal to use Hack Nerd Font.](https://ohmyposh.dev/docs/installation/fonts#configuration)
 
