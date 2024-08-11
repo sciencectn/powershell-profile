@@ -8,3 +8,5 @@ Import-Module git-aliases -DisableNameChecking
 if(-not $IsMacOS) {
     Import-Module Pscx
 }
+
+Import-Module posh-git

@@ -26,11 +26,21 @@ Then run `Setup.ps1` which will install the following:
 * [Zlocation](https://github.com/vors/ZLocation). It's like autojump. 
 * [Powershell Git Aliases](https://github.com/gluons/powershell-git-aliases). This imitates the legendary Z shell plugin. ggl = git pull, ggp = push, etc
 * [PSCX](https://github.com/Pscx/Pscx). PSCX replaces the pager with `less` which is way better than `more` (you think I wouldn't want to scroll backward?)
+* [Posh-Git](https://github.com/dahlbyk/posh-git?tab=readme-ov-file#installation) which adds tab completion for `git checkout` and more. 
 
 [Then configure Windows Terminal to use Hack Nerd Font.](https://ohmyposh.dev/docs/installation/fonts#configuration)
 
 You might have to refresh the terminal if `Setup.ps1` fails to call the `oh-my-posh` command, since it may not be in the PATH yet. 
 I could automate this but I'm too lazy. 
-Also, how often am I going to get a new Windows OS? 
+How often am I going to get a new Windows OS? 
 
 The theme is derived from [powerlevel10k_lean](https://ohmyposh.dev/docs/themes#powerlevel10k_lean). 
+
+### Miniconda
+
+If you use Miniconda to manage Python, create a new Windows Terminal profile with this for "Command line":
+```
+pwsh.exe -ExecutionPolicy ByPass -NoExit -Command "(& '~\miniconda3\Scripts\conda.exe' 'shell.powershell' 'hook') | Out-String | ?{$_} | Invoke-Expression; conda activate py312"
+```
+where the startup environment is `py312`, created with `conda create -n py312 python=3.12`. 
+
